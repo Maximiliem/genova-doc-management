@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Admin Edificios</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Firebase -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+  </head>
+  <body>
+    <!-- Contenedor de Login -->
+    <div id="login-container">
+      <h2>Login</h2>
+      <input type="email" id="email" placeholder="Tu email" />
+      <input type="password" id="password" placeholder="Contraseña" />
+      <button onclick="login()">Entrar</button>
+    </div>
+
+    <!-- Contenedor Principal (oculto al inicio) -->
+    <div id="app-container" style="display: none">
+      <h1>Admin Edificios</h1>
+      <button onclick="logout()">Cerrar Sesión</button>
+      <div id="content"></div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+
+    <script src="firebase-config.js"></script>
+    <script src="js/auth.js"></script>
+    <script src="js/buildings.js"></script>
+    <script src="js/app.js"></script>
+  </body>
+</html>
